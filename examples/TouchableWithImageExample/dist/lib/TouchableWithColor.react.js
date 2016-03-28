@@ -5,6 +5,7 @@
 
 "use strict";
 
+import assign from "object-assign";
 import React, {
     Component,
     StyleSheet,
@@ -46,16 +47,14 @@ class TouchableWithColor extends Component {
     }
 
     getStylesForTouchable() {
-
-        console.log(this.props.style);
         // Get the rest of the props from the parent component.
-        let styles = {
-            flex: 1
-        };
+        const  staticStyles = this.props.style;
         // Set the background color based on the pressed state of the component.
-        styles.backgroundColor = (this.state.isPressed) ? this.props.pressedColor : this.props.normalColor;
+        const dynamicStyles = {
+            backgroundColor: (this.state.isPressed) ? this.props.pressedColor : this.props.normalColor
+        }
         // Return the style rules.
-        return styles;
+        return assign({}, staticStyles, dynamicStyles);
     }
 }
 

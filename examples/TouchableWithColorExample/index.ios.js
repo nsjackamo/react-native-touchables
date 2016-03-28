@@ -31,19 +31,21 @@ class TouchableWithColorExample extends Component {
 
     render() {
 
-        const textStyles = {
-            fontSize    : 24,
-            fontWeight  : "bold"
-        };
-
         return (
             <View style={styles.container}>
-                <TouchableWithColor
-                    style={{ flex: 1 }}
-                    normalColor="#0D47A1"
-                    pressedColor = "#90CAF9"
-                    onPress={this.handleFirstPress}
-                />
+                <View style={{flex: 1, alignItems: "center", justifyContent: "center"}}>
+                    <TouchableWithColor
+                        style={{
+                            height          : 100,
+                            width           : 100,
+                            borderRadius    : 50,
+                            borderWidth     : 1
+                         }}
+                        normalColor="#0D47A1"
+                        pressedColor = "#90CAF9"
+                        onPress={this.handleFirstPress}
+                    />
+                </View>
                 <TouchableWithColor
                     style={{ flex: 1 }}
                     normalColor="#880E4F"
