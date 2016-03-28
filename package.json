@@ -2,7 +2,7 @@
   "name": "react-native-touchables",
   "version": "1.0.0",
   "description": "A touchable component library for react native. A lot of duplicate code happens in my projects when custom touchable components are needed. This library provides a few of the common ones. ",
-  "main": "react-native-touchables.js",
+  "main": "dist/react-native-touchables.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,11 @@
     "touchable",
     "buttons"
   ],
-  "author": "jackamoio",
-  "license": "ISC"
+  "author": "Derek Johnston <derek@jackamo.io>",
+  "license": "ISC",
+  "dependencies": {
+    "object-assign": "^4.0.1",
+    "react": "^0.14.7",
+    "react-native": "^0.22.2"
+  }
 }
