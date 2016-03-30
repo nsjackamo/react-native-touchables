@@ -1,6 +1,6 @@
 {
   "name": "react-native-touchables",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A touchable component library for react native. A lot of duplicate code happens in my projects when custom touchable components are needed. This library provides a few of the common ones. ",
   "main": "dist/react-native-touchables.js",
   "scripts": {
